@@ -16,12 +16,12 @@
 @media (max-width: 767px) {}
 
 /* Tablet devices, m and l */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (max-width: 1024px) {}
 
-@media (min-width: 1025px) and (max-width: 1366px) {}
+@media (max-width: 1366px) {}
 
 /* Desktop screens, xl */
-@media (min-width: 1367px) and (max-width: 1920px) {}
+@media (max-width: 1920px) {}
 
 /* Large screens, xxl */
 @media (min-width: 1921px) {}
