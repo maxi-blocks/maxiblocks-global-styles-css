@@ -37,7 +37,7 @@
     --maxi-light-button-font-size-general: 16px !important;
     /* for large screens */
     --maxi-light-button-font-size-xxl: 20px !important;
-    /* l, m, s, xs  and so on*/
+    /* l, m, s, xs  and so on */
     --maxi-light-button-font-size-xl: 16px !important;
     --maxi-light-button-font-style-general: normal !important;
     --maxi-light-button-font-weight-general: 400 !important;
@@ -55,6 +55,7 @@
     --maxi-light-button-background-color-hover: rgb(201, 52, 10) !important;
 
     /* Paragraph styles */
+    /* Note about fonts: you need to load the fonts files you want to use first */
     --maxi-light-p-font-family-general: "Roboto" !important;
     --maxi-light-p-font-size-general: 16px !important;
     --maxi-light-p-font-size-xxl: 20px !important;
@@ -405,7 +406,7 @@ body.maxi-blocks--active .maxi-dark .maxi-navigation-block__sub-menu {
     }
 }
 
-/*** Global styles by block kind ***/
+/**** Global styles by block kind ****/
 
 /* Button block */
 /* Note about tones: you can use body.maxi-blocks--active .maxi-light .maxi-button-block, 
@@ -519,10 +520,9 @@ body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon svg {
     }
 }
 
-/* Button block styles end */
+/*** Button block styles end ***/
 
 /*** Container block ***/
-
 /* Container block general styles */
 body.maxi-blocks--active .maxi-container-block {
     min-width: 100%;
@@ -847,7 +847,7 @@ body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child
     }
 }
 
-/* Column block styles end */
+/*** Column block styles end ***/
 
 /* Enable smooth scrolling */
 html {
