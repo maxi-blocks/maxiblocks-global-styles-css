@@ -2,7 +2,7 @@
 
 ## Description
 
-Use in your theme's global styles css file, customizer, site editor styles, or in any other css file in your theme.
+Use in your theme's global styles css file, customizer, site editor styles, a special plugin, or in any other css file in your theme.
 
 ## Breakpoints
 
@@ -12,6 +12,11 @@ Use in your theme's global styles css file, customizer, site editor styles, or i
 -   l: 1366px
 -   xl: 1920px
 -   xxl: 1921px and up
+
+## Hierarchy of styles
+
+Style card styles are global styles that are applied to all blocks.
+You can target blocks by tone (see below), by block kind (see below), group of blocks by a special class (see below), or by specific block (see below).
 
 ## Style Card variables
 
@@ -23,6 +28,37 @@ You can style the light and dark tones of the blocks using the following classes
 
 -   `.maxi-light`
 -   `.maxi-dark`
+
+## Block kind
+
+You can target blocks by their kind using the following classes:
+
+-   `.maxi-accordion-block`
+-   `.maxi-button-block`
+-   `.maxi-column-block`
+-   `.maxi-container-block`
+-   `.maxi-divider-block`
+-   `.maxi-group-block`
+-   `.maxi-image-block`
+-   `.maxi-list-item-block`
+-   `.maxi-map-block`
+-   `.maxi-number-counter-block`
+-   `.maxi-pane-block`
+-   `.maxi-row-block`
+-   `.maxi-search-block`
+-   `.maxi-slide-block`
+-   `.maxi-slider-block`
+-   `.maxi-svg-icon-block`
+-   `.maxi-text-block`
+-   `.maxi-video-block`
+
+## Special classes
+
+You can group and target blocks by special classes you add in the Editor -> Sidebar -> Add CSS classes -> Input CSS classes to target this block.
+
+## Specific blocks
+
+You can target blocks by their special classes or unique ids. The preferred way is to use the special classes you add (see above).
 
 ## Fonts
 
