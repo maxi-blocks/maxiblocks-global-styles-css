@@ -758,6 +758,150 @@ body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child
     }
 }
 
+/* Column block styles for 3 columns - [1/3, 1/3, 1/3] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(33.33% - 1.6667%) !important;
+    flex-basis: calc(33.33% - 1.6667%) !important;
+}
+
+/* Column block styles for 3 columns - [1/5, 1/5, 3/5] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2) {
+    width: calc(20% - 1.6667%) !important;
+    flex-basis: calc(20% - 1.6667%) !important;
+}
+
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(60% - 1.6667%) !important;
+    flex-basis: calc(60% - 1.6667%) !important;
+}
+
+/* Column block styles for 3 columns - [1/6, 1/6, 4/6] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2) {
+    width: calc(16.67% - 1.6667%) !important;
+    flex-basis: calc(16.67% - 1.6667%) !important;
+}
+
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(66.66% - 1.6667%) !important;
+    flex-basis: calc(66.66% - 1.6667%) !important;
+}
+
+/* Column block styles for 3 columns - [1/6, 4/6, 1/6] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(16.67% - 1.6667%) !important;
+    flex-basis: calc(16.67% - 1.6667%) !important;
+}
+
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2) {
+    width: calc(66.66% - 1.6667%) !important;
+    flex-basis: calc(66.66% - 1.6667%) !important;
+}
+
+/* Column block styles for 3 columns - [3/5, 1/5, 1/5] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3) {
+    width: calc(60% - 1.6667%) !important;
+    flex-basis: calc(60% - 1.6667%) !important;
+}
+
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(20% - 1.6667%) !important;
+    flex-basis: calc(20% - 1.6667%) !important;
+}
+
+/* Column block styles for 3 columns - [4/6, 1/6, 1/6] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3) {
+    width: calc(66.66% - 1.6667%) !important;
+    flex-basis: calc(66.66% - 1.6667%) !important;
+}
+
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+    width: calc(16.67% - 1.6667%) !important;
+    flex-basis: calc(16.67% - 1.6667%) !important;
+}
+
+/* Responsive styles for all 3-column variations */
+@media only screen and (max-width: 1024px) {
+
+    body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(3),
+    body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(2),
+    body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(3) {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 4 columns - [1/4, 1/4, 1/4, 1/4] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(4),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(3):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(4) {
+    width: calc(25% - 1.875%) !important;
+    flex-basis: calc(25% - 1.875%) !important;
+}
+
+/* Column block styles for 5 columns - [1/5, 1/5, 1/5, 1/5, 1/5] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(5),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(4),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(3):nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(4):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(5) {
+    width: calc(20% - 2%) !important;
+    flex-basis: calc(20% - 2%) !important;
+}
+
+/* Column block styles for 6 columns - [1/6, 1/6, 1/6, 1/6, 1/6, 1/6] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(6),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(5),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(3):nth-last-child(4),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(4):nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(5):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(6) {
+    width: calc(16.66% - 2.0833%) !important;
+    flex-basis: calc(16.66% - 2.0833%) !important;
+}
+
+/* Column block styles for 7 columns - [1/7, 1/7, 1/7, 1/7, 1/7, 1/7, 1/7] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(7),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(6),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(3):nth-last-child(5),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(4):nth-last-child(4),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(5):nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(6):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(7) {
+    width: calc(14.28% - 2.1429%) !important;
+    flex-basis: calc(14.28% - 2.1429%) !important;
+}
+
+/* Column block styles for 8 columns - [1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8] variation */
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(8),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(2):nth-last-child(7),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(3):nth-last-child(6),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(4):nth-last-child(5),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(5):nth-last-child(4),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(6):nth-last-child(3),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:nth-child(7):nth-last-child(2),
+body.maxi-blocks--active .maxi-row-block>.maxi-column-block:last-child:nth-child(8) {
+    width: calc(12.5% - 2.1875%) !important;
+    flex-basis: calc(12.5% - 2.1875%) !important;
+}
+
+/* Responsive styles for all column variations (4 to 8 columns) */
+@media only screen and (max-width: 1024px) {
+
+    body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(n+4),
+    body.maxi-blocks--active .maxi-row-block>.maxi-column-block:first-child:nth-last-child(n+4)~.maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
 /* Column block styles end */
 
 /* Enable smooth scrolling */
