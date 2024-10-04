@@ -521,6 +521,27 @@ body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon svg {
 
 /* Button block styles end */
 
+/*** Container block ***/
+
+/* Container block general styles */
+body.maxi-blocks--active .maxi-container-block {
+    min-width: 100% !important;
+    box-shadow: 0px 0px 0px 0px rgba(var(--maxi-light-color-8, 150, 176, 203), 1) !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    flex-direction: column !important;
+    row-gap: 20px !important;
+}
+
+body.maxi-blocks--active .maxi-container-block>.maxi-background-displayer .maxi-background-displayer__1 {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(var(--maxi-light-color-1, 255, 255, 255), 1) !important;
+    display: block !important;
+}
+
+/* Container block styles end */
+
 /*** Row block ***/
 /* Row block general styles */
 body.maxi-blocks--active .maxi-row-block {
