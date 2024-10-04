@@ -1,0 +1,681 @@
+/* MaxiBlocks Global Styles */
+
+/* Note about breakpoints - default values are:
+   xs: 480px
+   s: 767px
+   m: 1024px
+   l: 1366px
+   xl: 1920px
+   xxl: 1921px and up
+*/
+/* Media queries: */
+
+/* Mobile devices, s and xs */
+@media (max-width: 480px) {}
+
+@media (max-width: 767px) {}
+
+/* Tablet devices, m and l */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1366px) {}
+
+/* Desktop screens, xl */
+@media (min-width: 1367px) and (max-width: 1920px) {}
+
+/* Large screens, xxl */
+@media (min-width: 1921px) {}
+
+
+/*** Style Cards global styles ***/
+/* Style Card variables */
+:root {
+    /* Light tone variables */
+
+    /* Button styles */
+    --maxi-light-button-font-family-general: "Roboto" !important;
+    --maxi-light-button-font-size-general: 16px !important;
+    /* for large screens */
+    --maxi-light-button-font-size-xxl: 20px !important;
+    /* l, m, s, xs  and so on*/
+    --maxi-light-button-font-size-xl: 16px !important;
+    --maxi-light-button-font-style-general: normal !important;
+    --maxi-light-button-font-weight-general: 400 !important;
+    --maxi-light-button-line-height-general: 100% !important;
+    --maxi-light-button-line-height-xl: 100% !important;
+    --maxi-light-button-text-decoration-general: unset !important;
+    --maxi-light-button-text-transform-general: none !important;
+    --maxi-light-button-letter-spacing-general: 0px !important;
+    --maxi-light-button-letter-spacing-xxl: 0px !important;
+    --maxi-light-button-letter-spacing-xl: 0px !important;
+    --maxi-light-button-white-space-general: normal !important;
+    --maxi-light-button-word-spacing-general: 0px !important;
+    --maxi-light-button-text-indent-general: 0px !important;
+    --maxi-light-button-background-color: initial !important;
+    --maxi-light-button-background-color-hover: rgb(201, 52, 10) !important;
+
+    /* Paragraph styles */
+    --maxi-light-p-font-family-general: "Roboto" !important;
+    --maxi-light-p-font-size-general: 16px !important;
+    --maxi-light-p-font-size-xxl: 20px !important;
+    --maxi-light-p-font-size-xl: 16px !important;
+    --maxi-light-p-font-style-general: normal !important;
+    --maxi-light-p-font-weight-general: 400 !important;
+    --maxi-light-p-line-height-general: 26px !important;
+    --maxi-light-p-line-height-xxl: 30px !important;
+    --maxi-light-p-line-height-xl: 26px !important;
+    --maxi-light-p-text-decoration-general: unset !important;
+    --maxi-light-p-text-transform-general: none !important;
+    --maxi-light-p-letter-spacing-general: 0px !important;
+    --maxi-light-p-letter-spacing-xxl: 0px !important;
+    --maxi-light-p-letter-spacing-xl: 0px !important;
+    --maxi-light-p-white-space-general: normal !important;
+    --maxi-light-p-word-spacing-general: 0px !important;
+    --maxi-light-p-margin-bottom-general: 20px !important;
+    --maxi-light-p-text-indent-general: 0px !important;
+
+    /* Heading styles (H1 to H6) */
+    --maxi-light-h1-font-family-general: "Roboto" !important;
+    --maxi-light-h1-font-size-general: 45px !important;
+    --maxi-light-h1-font-size-xxl: 60px !important;
+    --maxi-light-h1-font-size-xl: 45px !important;
+    --maxi-light-h1-font-size-l: 40px !important;
+    --maxi-light-h1-font-size-m: 36px !important;
+    --maxi-light-h1-font-size-s: 34px !important;
+    --maxi-light-h1-font-size-xs: 32px !important;
+    --maxi-light-h1-font-style-general: normal !important;
+    --maxi-light-h1-font-weight-general: 500 !important;
+    --maxi-light-h1-line-height-general: 55px !important;
+    --maxi-light-h1-line-height-xxl: 70px !important;
+    --maxi-light-h1-line-height-xl: 55px !important;
+    --maxi-light-h1-line-height-l: 50px !important;
+    --maxi-light-h1-line-height-m: 46px !important;
+    --maxi-light-h1-line-height-s: 44px !important;
+    --maxi-light-h1-line-height-xs: 42px !important;
+    --maxi-light-h1-text-decoration-general: unset !important;
+    --maxi-light-h1-text-transform-general: none !important;
+    --maxi-light-h1-letter-spacing-general: 0px !important;
+    --maxi-light-h1-letter-spacing-xxl: 0px !important;
+    --maxi-light-h1-letter-spacing-xl: 0px !important;
+    --maxi-light-h1-white-space-general: normal !important;
+    --maxi-light-h1-word-spacing-general: 0px !important;
+    --maxi-light-h1-margin-bottom-general: 20px !important;
+    --maxi-light-h1-text-indent-general: 0px !important;
+
+    /* H2 to H6 follow the same pattern */
+
+    /* Link styles */
+    --maxi-light-link: rgb(255, 74, 23) !important;
+    --maxi-light-link-palette: initial !important;
+    --maxi-light-link-hover-palette: initial !important;
+
+    /* Navigation styles */
+    --maxi-light-navigation-font-family-general: "Roboto" !important;
+    --maxi-light-navigation-font-size-general: 16px !important;
+    --maxi-light-navigation-font-size-xxl: 20px !important;
+    --maxi-light-navigation-font-size-xl: 16px !important;
+    --maxi-light-navigation-font-size-m: 22px !important;
+    --maxi-light-navigation-font-style-general: normal !important;
+    --maxi-light-navigation-font-weight-general: 400 !important;
+    --maxi-light-navigation-line-height-general: 26px !important;
+    --maxi-light-navigation-line-height-xxl: 30px !important;
+    --maxi-light-navigation-line-height-xl: 26px !important;
+    --maxi-light-navigation-line-height-m: 180% !important;
+    --maxi-light-navigation-text-decoration-general: unset !important;
+    --maxi-light-navigation-text-transform-general: none !important;
+    --maxi-light-navigation-letter-spacing-general: 0px !important;
+    --maxi-light-navigation-letter-spacing-xxl: 0px !important;
+    --maxi-light-navigation-letter-spacing-xl: 0px !important;
+    --maxi-light-navigation-white-space-general: normal !important;
+    --maxi-light-navigation-word-spacing-general: 0px !important;
+    --maxi-light-navigation-margin-bottom-general: 20px !important;
+    --maxi-light-navigation-text-indent-general: 0px !important;
+    --maxi-light-navigation-padding-bottom-general: 5px !important;
+    --maxi-light-navigation-padding-bottom-xxl: 20px !important;
+    --maxi-light-navigation-padding-top-general: 5px !important;
+    --maxi-light-navigation-padding-top-xxl: 10px !important;
+    --maxi-light-navigation-padding-left-general: 15px !important;
+    --maxi-light-navigation-padding-left-xxl: 20px !important;
+    --maxi-light-navigation-padding-right-general: 15px !important;
+    --maxi-light-navigation-padding-right-xxl: 20px !important;
+
+    /* Menu styles */
+    --maxi-light-menu-item: rgb(0, 0, 0) !important;
+    --maxi-light-menu-burger: rgb(0, 0, 0) !important;
+    --maxi-light-menu-item-hover: rgb(201, 52, 10) !important;
+    --maxi-light-menu-item-visited: rgb(0, 0, 0) !important;
+    --maxi-light-menu-item-sub-bg: rgb(255, 255, 255) !important;
+    --maxi-light-menu-mobile-bg: rgb(255, 255, 255) !important;
+
+    /* Color palette */
+    --maxi-light-color-1: rgb(255, 255, 255) !important;
+    --maxi-light-color-2: rgb(242, 249, 253) !important;
+    --maxi-light-color-3: rgb(155, 155, 155) !important;
+    --maxi-light-color-4: rgb(255, 74, 23) !important;
+    --maxi-light-color-5: rgb(0, 0, 0) !important;
+    --maxi-light-color-6: rgb(201, 52, 10) !important;
+    --maxi-light-color-7: rgb(8, 18, 25) !important;
+    --maxi-light-color-8: rgb(150, 176, 203) !important;
+
+    /* Dark tone variables */
+
+    /* Button styles */
+    --maxi-dark-button-font-family-general: "Roboto" !important;
+    --maxi-dark-button-font-size-general: 16px !important;
+    --maxi-dark-button-font-size-xxl: 20px !important;
+    --maxi-dark-button-font-size-xl: 16px !important;
+    --maxi-dark-button-font-style-general: normal !important;
+    --maxi-dark-button-font-weight-general: 400 !important;
+    --maxi-dark-button-line-height-general: 100% !important;
+    --maxi-dark-button-line-height-xl: 100% !important;
+    --maxi-dark-button-text-decoration-general: unset !important;
+    --maxi-dark-button-text-transform-general: none !important;
+    --maxi-dark-button-letter-spacing-general: 0px !important;
+    --maxi-dark-button-letter-spacing-xxl: 0px !important;
+    --maxi-dark-button-letter-spacing-xl: 0px !important;
+    --maxi-dark-button-white-space-general: normal !important;
+    --maxi-dark-button-word-spacing-general: 0px !important;
+    --maxi-dark-button-text-indent-general: 0px !important;
+    --maxi-dark-button-background-color: initial !important;
+    --maxi-dark-button-background-color-hover: rgb(201, 52, 10) !important;
+
+    /* Paragraph styles */
+    --maxi-dark-p-font-family-general: "Roboto" !important;
+    --maxi-dark-p-font-size-general: 16px !important;
+    --maxi-dark-p-font-size-xxl: 20px !important;
+    --maxi-dark-p-font-size-xl: 16px !important;
+    --maxi-dark-p-font-style-general: normal !important;
+    --maxi-dark-p-font-weight-general: 400 !important;
+    --maxi-dark-p-line-height-general: 26px !important;
+    --maxi-dark-p-line-height-xxl: 30px !important;
+    --maxi-dark-p-line-height-xl: 26px !important;
+    --maxi-dark-p-text-decoration-general: unset !important;
+    --maxi-dark-p-text-transform-general: none !important;
+    --maxi-dark-p-letter-spacing-general: 0px !important;
+    --maxi-dark-p-letter-spacing-xxl: 0px !important;
+    --maxi-dark-p-letter-spacing-xl: 0px !important;
+    --maxi-dark-p-white-space-general: normal !important;
+    --maxi-dark-p-word-spacing-general: 0px !important;
+    --maxi-dark-p-margin-bottom-general: 20px !important;
+    --maxi-dark-p-text-indent-general: 0px !important;
+
+    /* Heading styles (H1 to H6) */
+    --maxi-dark-h1-font-family-general: "Roboto" !important;
+    --maxi-dark-h1-font-size-general: 45px !important;
+    --maxi-dark-h1-font-size-xxl: 60px !important;
+    --maxi-dark-h1-font-size-xl: 45px !important;
+    --maxi-dark-h1-font-size-l: 40px !important;
+    --maxi-dark-h1-font-size-m: 36px !important;
+    --maxi-dark-h1-font-size-s: 34px !important;
+    --maxi-dark-h1-font-size-xs: 32px !important;
+    --maxi-dark-h1-font-style-general: normal !important;
+    --maxi-dark-h1-font-weight-general: 500 !important;
+    --maxi-dark-h1-line-height-general: 55px !important;
+    --maxi-dark-h1-line-height-xxl: 70px !important;
+    --maxi-dark-h1-line-height-xl: 55px !important;
+    --maxi-dark-h1-line-height-l: 50px !important;
+    --maxi-dark-h1-line-height-m: 46px !important;
+    --maxi-dark-h1-line-height-s: 44px !important;
+    --maxi-dark-h1-line-height-xs: 42px !important;
+    --maxi-dark-h1-text-decoration-general: unset !important;
+    --maxi-dark-h1-text-transform-general: none !important;
+    --maxi-dark-h1-letter-spacing-general: 0px !important;
+    --maxi-dark-h1-letter-spacing-xxl: 0px !important;
+    --maxi-dark-h1-letter-spacing-xl: 0px !important;
+    --maxi-dark-h1-white-space-general: normal !important;
+    --maxi-dark-h1-word-spacing-general: 0px !important;
+    --maxi-dark-h1-margin-bottom-general: 20px !important;
+    --maxi-dark-h1-text-indent-general: 0px !important;
+
+    /* H2 to H6 follow the same pattern */
+
+    /* Link styles */
+    --maxi-dark-link: rgb(255, 74, 23) !important;
+    --maxi-dark-link-palette: initial !important;
+    --maxi-dark-link-hover-palette: initial !important;
+
+    /* Navigation styles */
+    --maxi-dark-navigation-font-family-general: "Roboto" !important;
+    --maxi-dark-navigation-font-size-general: 16px !important;
+    --maxi-dark-navigation-font-size-xxl: 20px !important;
+    --maxi-dark-navigation-font-size-xl: 16px !important;
+    --maxi-dark-navigation-font-size-m: 22px !important;
+    --maxi-dark-navigation-font-style-general: normal !important;
+    --maxi-dark-navigation-font-weight-general: 400 !important;
+    --maxi-dark-navigation-line-height-general: 26px !important;
+    --maxi-dark-navigation-line-height-xxl: 30px !important;
+    --maxi-dark-navigation-line-height-xl: 26px !important;
+    --maxi-dark-navigation-line-height-m: 180% !important;
+    --maxi-dark-navigation-text-decoration-general: unset !important;
+    --maxi-dark-navigation-text-transform-general: none !important;
+    --maxi-dark-navigation-letter-spacing-general: 0px !important;
+    --maxi-dark-navigation-letter-spacing-xxl: 0px !important;
+    --maxi-dark-navigation-letter-spacing-xl: 0px !important;
+    --maxi-dark-navigation-white-space-general: normal !important;
+    --maxi-dark-navigation-word-spacing-general: 0px !important;
+    --maxi-dark-navigation-margin-bottom-general: 20px !important;
+    --maxi-dark-navigation-text-indent-general: 0px !important;
+    --maxi-dark-navigation-padding-bottom-general: 5px !important;
+    --maxi-dark-navigation-padding-bottom-xxl: 20px !important;
+    --maxi-dark-navigation-padding-top-general: 5px !important;
+    --maxi-dark-navigation-padding-top-xxl: 10px !important;
+    --maxi-dark-navigation-padding-left-general: 15px !important;
+    --maxi-dark-navigation-padding-left-xxl: 20px !important;
+    --maxi-dark-navigation-padding-right-general: 15px !important;
+    --maxi-dark-navigation-padding-right-xxl: 20px !important;
+
+    /* Menu styles */
+    --maxi-dark-menu-item: rgb(255, 255, 255) !important;
+    --maxi-dark-menu-burger: rgb(255, 255, 255) !important;
+    --maxi-dark-menu-item-hover: rgb(201, 52, 10) !important;
+    --maxi-dark-menu-item-visited: rgb(255, 255, 255) !important;
+    --maxi-dark-menu-item-sub-bg: rgb(0, 0, 0) !important;
+    --maxi-dark-menu-mobile-bg: rgb(0, 0, 0) !important;
+
+    /* Color palette */
+    --maxi-dark-color-1: rgb(0, 0, 0) !important;
+    --maxi-dark-color-2: rgb(5, 23, 33) !important;
+    --maxi-dark-color-3: rgb(155, 155, 155) !important;
+    --maxi-dark-color-4: rgb(255, 74, 23) !important;
+    --maxi-dark-color-5: rgb(255, 255, 255) !important;
+    --maxi-dark-color-6: rgb(201, 52, 10) !important;
+    --maxi-dark-color-7: rgb(245, 245, 245) !important;
+    --maxi-dark-color-8: rgb(9, 60, 88) !important;
+
+    /* Active Style Card color */
+    --maxi-active-sc-color: rgb(255, 74, 23) !important;
+}
+
+/* Styles for MaxiBlocks */
+
+/* Light tone styles */
+
+/* Link color styles */
+body.maxi-blocks--active .maxi-light.maxi-sc-light-link-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light.maxi-sc-light-link-color-1 a.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light .maxi-sc-light-link-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light .maxi-sc-light-link-color-1 a.maxi-block--has-link {
+    --maxi-light-link-palette: var(--maxi-light-color-1);
+}
+
+/* Link hover color styles */
+body.maxi-blocks--active .maxi-light.maxi-sc-light-link-hover-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light.maxi-sc-light-link-hover-color-1 a.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light .maxi-sc-light-link-hover-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-light .maxi-sc-light-link-hover-color-1 a.maxi-block--has-link {
+    --maxi-light-link-hover-palette: var(--maxi-light-color-1);
+}
+
+/* Styles for color classes 2-8 follow the same pattern */
+
+/* Dark tone styles */
+
+/* Link color styles */
+body.maxi-blocks--active .maxi-dark.maxi-sc-dark-link-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark.maxi-sc-dark-link-color-1 a.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark .maxi-sc-dark-link-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark .maxi-sc-dark-link-color-1 a.maxi-block--has-link {
+    --maxi-dark-link-palette: var(--maxi-dark-color-1);
+}
+
+/* Link hover color styles */
+body.maxi-blocks--active .maxi-dark.maxi-sc-dark-link-hover-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark.maxi-sc-dark-link-hover-color-1 a.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark .maxi-sc-dark-link-hover-color-1.maxi-block--has-link,
+body.maxi-blocks--active .maxi-dark .maxi-sc-dark-link-hover-color-1 a.maxi-block--has-link {
+    --maxi-dark-link-hover-palette: var(--maxi-dark-color-1);
+}
+
+/* Styles for color classes 2-8 follow the same pattern */
+
+/* Light tone button background color */
+body.maxi-blocks--active .maxi-light .maxi-button-block .maxi-button-block__button,
+body.maxi-blocks--active .maxi-light.maxi-button-block .maxi-button-block__button {
+    background-color: var(--maxi-light-button-background-color) !important;
+}
+
+/* Light tone button hover background color */
+
+body.maxi-blocks--active .maxi-light .maxi-button-block .maxi-button-block__button:hover,
+body.maxi-blocks--active .maxi-light.maxi-button-block .maxi-button-block__button:hover {
+    background-color: var(--maxi-light-button-background-color-hover) !important;
+}
+
+/* Dark tone button background color */
+body.maxi-blocks--active .maxi-dark .maxi-button-block .maxi-button-block__button,
+body.maxi-blocks--active .maxi-dark.maxi-button-block .maxi-button-block__button {
+    background-color: var(--maxi-dark-button-background-color) !important;
+}
+
+/* Dark tone button hover background color */
+body.maxi-blocks--active .maxi-dark .maxi-button-block .maxi-button-block__button:hover,
+body.maxi-blocks--active .maxi-dark.maxi-button-block .maxi-button-block__button:hover {
+    background-color: var(--maxi-dark-button-background-color-hover) !important;
+}
+
+/* Navigation item styles */
+body.maxi-blocks--active .maxi-navigation-block__item {
+    color: var(--maxi-light-menu-item);
+}
+
+/* Navigation item hover styles */
+body.maxi-blocks--active .maxi-navigation-block__item:hover {
+    color: var(--maxi-light-menu-item-hover);
+}
+
+/* Dark tone navigation item styles */
+body.maxi-blocks--active .maxi-dark .maxi-navigation-block__item {
+    color: var(--maxi-dark-menu-item);
+}
+
+/* Dark tone navigation item hover styles */
+body.maxi-blocks--active .maxi-dark .maxi-navigation-block__item:hover {
+    color: var(--maxi-dark-menu-item-hover);
+}
+
+/* Hamburger menu icon color */
+body.maxi-blocks--active .maxi-navigation-block__menu-icon .line {
+    stroke: var(--maxi-light-menu-burger);
+}
+
+/* Dark tone hamburger menu icon color */
+body.maxi-blocks--active .maxi-dark .maxi-navigation-block__menu-icon .line {
+    stroke: var(--maxi-dark-menu-burger);
+}
+
+/* Sub-menu background color */
+body.maxi-blocks--active .maxi-navigation-block__sub-menu {
+    background-color: var(--maxi-light-menu-item-sub-bg);
+}
+
+/* Dark tone sub-menu background color */
+body.maxi-blocks--active .maxi-dark .maxi-navigation-block__sub-menu {
+    background-color: var(--maxi-dark-menu-item-sub-bg);
+}
+
+/* Mobile menu background color */
+@media (max-width: 767px) {
+    body.maxi-blocks--active .maxi-navigation-block__menu-items {
+        background-color: var(--maxi-light-menu-mobile-bg);
+    }
+
+    /* Dark tone mobile menu background color */
+    body.maxi-blocks--active .maxi-dark .maxi-navigation-block__menu-items {
+        background-color: var(--maxi-dark-menu-mobile-bg);
+    }
+}
+
+/*** Global styles by block kind ***/
+
+/* Button block */
+/* Note about tones: you can use body.maxi-blocks--active .maxi-light .maxi-button-block, 
+** body.maxi-blocks--active .maxi-light.maxi-button-block to affect only light buttons (and .maxi-dark for dark buttons)
+**/
+
+/* General button styles */
+body.maxi-blocks--active .maxi-button-block {
+    justify-content: center !important;
+    box-shadow: 0px 0px 0px 0px rgba(var(--maxi-dark-color-8, 9, 60, 88), 1) !important;
+    min-width: initial !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/* Button element styles */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button {
+    min-width: initial !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 0px 0px rgba(var(--maxi-dark-color-4, 255, 74, 23), 1) !important;
+    text-align: center !important;
+    padding: 0px !important;
+}
+
+/* Button content styles */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__content {
+    color: var(--maxi-dark-button-color, rgba(var(--maxi-dark-color-4, 255, 74, 23), 1)) !important;
+}
+
+/* Button icon styles */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg path {
+    stroke-width: 1.5 !important;
+}
+
+/* Button icon stroke styles */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg[data-stroke]:not([stroke^="none"]) *,
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg path[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg g[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg use[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg circle[data-stroke]:not([stroke^="none"]) {
+    stroke: var(--maxi-dark-icon-stroke, rgba(var(--maxi-dark-color-1, 0, 0, 0), 1)) !important;
+}
+
+/* Button icon container styles */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon {
+    padding: 0px !important;
+    border-radius: 0px !important;
+    margin-right: 0px !important;
+}
+
+/* Button icon size */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg {
+    height: 21px !important;
+    width: 21px !important;
+}
+
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg>* {
+    margin-right: 0px !important;
+}
+
+/* Hover styles for button icon */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg>* {
+    border-radius: 0px !important;
+}
+
+/* Hover styles for button icon stroke */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg[data-stroke]:not([stroke^="none"]) *,
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg path[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg g[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg use[data-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg circle[data-stroke]:not([stroke^="none"]) {
+    stroke: var(--maxi-dark-icon-stroke-hover, rgba(var(--maxi-dark-color-6, 201, 52, 10), 1)) !important;
+}
+
+/* Hover styles for button icon with data-hover-stroke attribute */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg[data-hover-stroke]:not([stroke^="none"]) *,
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg path[data-hover-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg[data-hover-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg g[data-hover-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg use[data-hover-stroke]:not([stroke^="none"]),
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__button:hover .maxi-button-block__icon svg circle[data-hover-stroke]:not([stroke^="none"]) {
+    stroke: var(--maxi-dark-icon-stroke-hover, rgba(var(--maxi-dark-color-6, 201, 52, 10), 1)) !important;
+}
+
+/* Transition styles for button icon */
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon svg>*:not(g) {
+    transition: all 0.3s 0s ease !important;
+}
+
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon svg g *:not(g) {
+    transition: all 0.3s 0s ease !important;
+}
+
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon {
+    transition: background 0.3s 0s ease, border 0.3s 0s ease !important;
+}
+
+body.maxi-blocks--active .maxi-button-block .maxi-button-block__icon svg {
+    transition: width 0.3s 0s ease, height 0.3s 0s ease !important;
+}
+
+/* Styles for extra large screens */
+@media only screen and (min-width:1921px) {
+    body.maxi-blocks--active .maxi-button-block .maxi-button-block__button .maxi-button-block__icon svg {
+        height: 32px !important;
+        width: 32px !important;
+    }
+}
+
+/* Button block styles end */
+
+/*** Row block ***/
+/* Row block general styles */
+body.maxi-blocks--active .maxi-row-block {
+    max-width: 90% !important;
+    flex-wrap: wrap !important;
+    row-gap: 20px !important;
+    column-gap: 2.5% !important;
+}
+
+/* Styles for extra large screens */
+@media only screen and (min-width: 1921px) {
+    body.maxi-blocks--active .maxi-row-block {
+        max-width: 1690px !important;
+    }
+}
+
+/* Styles for large screens */
+@media only screen and (max-width: 1920px) {
+    body.maxi-blocks--active .maxi-row-block {
+        max-width: 1170px !important;
+    }
+}
+
+/* Styles for medium-large screens */
+@media only screen and (max-width: 1366px) {
+    body.maxi-blocks--active .maxi-row-block {
+        max-width: 90% !important;
+    }
+}
+
+/*** Row block styles end ***/
+
+/*** Column block ***/
+/* Column block styles for 1 column */
+body.maxi-blocks--active .maxi-column-block {
+    width: 100%;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+/* Column block styles for 2 equal columns */
+body.maxi-blocks--active .maxi-column-block-2 {
+    width: calc(50% - 1.25%) !important;
+    flex-basis: calc(50% - 1.25%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block-2 {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 3 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(33.33% - 1.6667%) !important;
+    flex-basis: calc(33.33% - 1.6667%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 4 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(25% - 1.875%) !important;
+    flex-basis: calc(25% - 1.875%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 5 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(20% - 2%) !important;
+    flex-basis: calc(20% - 2%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 6 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(16.66% - 2.0833%) !important;
+    flex-basis: calc(16.66% - 2.0833%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 7 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(14.28% - 2.1429%) !important;
+    flex-basis: calc(14.28% - 2.1429%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles for 8 equal columns */
+body.maxi-blocks--active .maxi-column-block {
+    width: calc(12.5% - 2.1875%) !important;
+    flex-basis: calc(12.5% - 2.1875%) !important;
+    flex-direction: column !important;
+}
+
+/* Styles for medium screens and below */
+@media only screen and (max-width: 1024px) {
+    body.maxi-blocks--active .maxi-column-block {
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+/* Column block styles end */
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable smooth scrolling for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
